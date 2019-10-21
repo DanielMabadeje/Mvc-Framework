@@ -10,14 +10,16 @@ class Core{
     protected $param=[];
     public function __construct()
     {
-     $this->geturl();   
+     $this->geturl('hi');   
     }
 
-    public function geturl()
+    public function geturl($go)
     {
-        echo $_GET['url'];
-        // if (condition) {
-        //     # code...
-        // }
+        if (isset($_GET['url'])) {
+            $uri=explode('/', $_GET['url']);
+        echo $_GET['url'].$go;
+        print_r($uri);
+
+        }
     }
 }
