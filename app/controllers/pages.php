@@ -1,12 +1,17 @@
 <?php
-class Pages
+class Pages extends Controller
 { 
     public function __construct()
     {
-        echo 'page loaded';
+
     }
-    public function FunctionName(Type $var = null)
+    public function about($id)
     {
+        echo 'hello'.$id;
         # code...
+    }
+    public function Index(Type $var = null)
+    {
+        $this->view('index');
     }
 }
