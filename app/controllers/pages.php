@@ -12,6 +12,6 @@ class Pages extends Controller
     }
     public function Index(Type $var = null)
     {
-        $this->view('index');
+        $this->view('pages/index');
     }
 }
