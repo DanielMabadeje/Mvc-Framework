@@ -51,7 +51,7 @@ class MakeModel extends Command
             die();
             $text = strtoupper($text);
         }
-        $newFileName = 'Models/' . $text . ".php";
+        $newFileName = 'app/Models/' . $text . ".php";
         $newFileContent = '<?php namespace App\Models;
         class ' . $text . ' {
             private $db;
@@ -72,7 +72,7 @@ class MakeModel extends Command
         }
 
    ';
-        $myfile = fopen("../../Models/" . $text . ".php", "w") or die("Unable to open or create " . $text . ".php file!");
+        $myfile = fopen("app/models/" . $text . ".php", "w") or die("Unable to open or create " . $text . ".php file!");
         if ($myfile) {
             if (file_put_contents($newFileName, $newFileContent) !== false) {
                 echo "Model created at " . basename($newFileName) . "";

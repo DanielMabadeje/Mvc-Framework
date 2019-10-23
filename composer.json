@@ -3,8 +3,11 @@
         "symfony/console": "2.6.7"
     },
     "autoload": {
-        "classmap": ["Vendor/commands"]
-      },
+      "classmap": ["Vendor/Commands"],
+      "psr-4": {
+          "App\\": "."
+        }
+    },
       "config": {
         "vendor-dir": "Vendor"
       }
