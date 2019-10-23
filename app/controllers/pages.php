@@ -9,7 +9,7 @@ class Pages extends Controller
 {
     public function __construct()
     {
-        $this->postModel = $this->model('Post');
+        
     }
     public function about($id)
     {
@@ -18,12 +18,10 @@ class Pages extends Controller
     }
     public function Index(Type $var = null)
     {
-        $posts = $this->postModel->getPosts();
+        
         $data = [
             'title' => 'welcome',
-            'posts' => $posts
         ];
-        $posts = $this->postModel->getPosts();
         $this->view('pages/index', $data);
     }
 }
