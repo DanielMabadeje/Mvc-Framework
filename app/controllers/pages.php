@@ -20,7 +20,7 @@ class Pages extends Controller
     {
         
         $data = [
-            'title' => 'welcome',
+            'title' => "Mabadeje's Framework",
         ];
         $this->view('pages/index', $data);
     }
