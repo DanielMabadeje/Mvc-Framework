@@ -130,7 +130,7 @@ class MakeAuth extends Command
 
 
         //creates views
-        $newFileName = 'public/views/users/register.php';
+        $newFileName = 'app/views/users/register.php';
         $newFileContent = '<?php require APPROOT . "/views/inc/header.php"; ?>
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -172,7 +172,7 @@ class MakeAuth extends Command
             </div>
         </div> <?php require APPROOT . "/views/inc/footer.php"; ?>
         ';
-        $myfile = fopen("public/views/users/register.php", "w") or die("Unable to open or create Register.php file!");
+        $myfile = fopen("app/views/users/register.php", "w") or die("Unable to open or create Register.php file!");
         if ($myfile) {
             if (file_put_contents($newFileName, $newFileContent) !== false) {
                 echo "Model created at " . basename($newFileName) . "";
@@ -183,7 +183,7 @@ class MakeAuth extends Command
 
 
         // login
-        $newFileName = 'public/views/users/login.php';
+        $newFileName = 'app/views/users/login.php';
         $newFileContent = '<?php require APPROOT . "/views/inc/header.php"; ?>
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -214,7 +214,7 @@ class MakeAuth extends Command
             </div>
         </div> <?php require APPROOT . "/views/inc/footer.php"; ?>
         ';
-        $myfile = fopen("public/views/users/login.php", "w") or die("Unable to open or create Login.php file!");
+        $myfile = fopen("app/views/users/login.php", "w") or die("Unable to open or create Login.php file!");
         if ($myfile) {
             if (file_put_contents($newFileName, $newFileContent) !== false) {
                 echo "view created at " . basename($newFileName) . "";

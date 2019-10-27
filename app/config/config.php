@@ -6,6 +6,6 @@ define('DB_PASS', '_YOUR_PASSWORD_');
 define('DB_NAME', '_YOUR_DBNAME');
 //App Root
 define('APPROOT', dirname(dirname(__FILE__)));
-define('URLROOT', '_YOUR_URL_ROOT');
+define('URLROOT', 'http://localhost/{_YOUR_URL_ROOT}');
 //site name
 define('SITENAME', '_YOUR_SITENAME');
